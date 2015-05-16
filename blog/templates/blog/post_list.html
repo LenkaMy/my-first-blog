@@ -7,19 +7,19 @@
             <h1><a href="">můj první blog</a></h1>
         </div>
 
-        <div>
+        {% for post in posts %}
             <p>published: 14.06.2014, 12:14</p>
             <h2><a href="">můj první post</a></h2>
             <a href="http://djangogirls.org">django girls</a>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce <br />
 dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+{% endfor %}
 
-        <div>
+        {% for post in posts %}
             <p>published: 14.06.2014, 12:14</p>
             <h2><a href="">druhý post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. <br />
 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+{% endfor %}
     </body>
 </html>
